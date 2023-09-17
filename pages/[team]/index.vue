@@ -1,30 +1,19 @@
 <script setup>
-import { useRoute, useRouter } from '#app'
-import teams from '~/api/data/teamsdata.json'
+import { definePageMeta } from "nuxt/dist/pages/runtime/index.js";
 
-const route = useRoute()
-const router = useRouter()
-const routeName = ref(route.params.team)
-
-const isRealTeam = computed(() => {
-  return !!teams.filter(team => team.name.toLowerCase() === routeName.value)
-})
-
-const teamTasks = computed(() => {
-  return teams.filter(team => team.name.toLowerCase() === routeName.value)[0]
-})
-
-onMounted(() => {
-  routeName.value = route.params.team
-  console.log(routeName)
-  console.log(teamTasks)
+definePageMeta({
+  middleware: [
+    function () {
+      return navigateTo({
+        path: '/',
+      })
+    }
+  ],
 })
 </script>
 
 <template>
-  <div v-for="task in teamTasks.tasks">
-    <NuxtLink :to="`/team1/${task.slug}`">{{ task.number }}</NuxtLink>
-  </div>
+  <div />
 </template>
 
 <style scoped>

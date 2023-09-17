@@ -1,6 +1,8 @@
 [
   {
     "name": "Team1",
+    "background": "#800080",
+    "color":"#FFFFFF",
     "tasks": [
       {
         "number": 1,
@@ -10,272 +12,284 @@
       {
         "number": 2,
         "content": "Solve for x: 3x - 5 = 10",
-        "slug": "team1-2HjKlMnO"
+        "slug": "2HjKlMnO"
       },
       {
         "number": 3,
         "content": "Find the area of a rectangle with length 5 and width 8",
-        "slug": "team1-3PqRsTuV"
+        "slug": "3PqRsTuV"
       },
       {
         "number": 4,
         "content": "Calculate the square root of 25",
-        "slug": "team1-4WxYz123"
+        "slug": "4WxYz123"
       },
       {
         "number": 5,
         "content": "What is the product of 7 and 9?",
-        "slug": "team1-5A1B2C3D"
+        "slug": "5A1B2C3D"
       },
       {
         "number": 6,
         "content": "If a = 3 and b = 4, find the value of a^2 + b^2",
-        "slug": "team1-6E4F5G6H"
+        "slug": "6E4F5G6H"
       },
       {
         "number": 7,
         "content": "Simplify: (2x^3 * 3x^2) / (6x^4)",
-        "slug": "team1-7I7J8K9L"
+        "slug": "7I7J8K9L"
       }
     ]
   },
   {
     "name": "Team2",
+    "background": "#0000FF",
+    "color": "#FFFFFF",
     "tasks": [
       {
         "number": 1,
         "content": "What is 5 - 3?",
-        "slug": "team2-1MnOpQrS"
+        "slug": "1MnOpQrS"
       },
       {
         "number": 2,
         "content": "Solve for x: 2x + 7 = 15",
-        "slug": "team2-2TtUvWxY"
+        "slug": "2TtUvWxY"
       },
       {
         "number": 3,
         "content": "Find the perimeter of a square with side length 6",
-        "slug": "team2-3ZaBbCcD"
+        "slug": "3ZaBbCcD"
       },
       {
         "number": 4,
         "content": "Calculate the cube root of 64",
-        "slug": "team2-4EeFfGgH"
+        "slug": "4EeFfGgH"
       },
       {
         "number": 5,
         "content": "What is 12 divided by 4?",
-        "slug": "team2-5IiJjKkL"
+        "slug": "5IiJjKkL"
       },
       {
         "number": 6,
         "content": "If a = 5 and b = 2, find the value of a^2 - b^2",
-        "slug": "team2-6MmNnOoP"
+        "slug": "6MmNnOoP"
       },
       {
         "number": 7,
         "content": "Simplify: (4x^2 * 2x^3) / (8x^4)",
-        "slug": "team2-7QqRrSsT"
+        "slug": "7QqRrSsT"
       }
     ]
   },
   {
     "name": "Team3",
+    "background": "#008000",
+    "color": "#FFFFFF",
     "tasks": [
       {
         "number": 1,
         "content": "What is 8 + 6?",
-        "slug": "team3-1UuVvWwX"
+        "slug": "1UuVvWwX"
       },
       {
         "number": 2,
         "content": "Solve for x: 4x - 9 = 27",
-        "slug": "team3-2YyZz123"
+        "slug": "2YyZz123"
       },
       {
         "number": 3,
         "content": "Find the area of a triangle with base 10 and height 8",
-        "slug": "team3-3AaBbCcD"
+        "slug": "3AaBbCcD"
       },
       {
         "number": 4,
         "content": "Calculate the square root of 144",
-        "slug": "team3-4EeFfGgH"
+        "slug": "4EeFfGgH"
       },
       {
         "number": 5,
         "content": "What is 15 multiplied by 7?",
-        "slug": "team3-5IiJjKkL"
+        "slug": "5IiJjKkL"
       },
       {
         "number": 6,
         "content": "If a = 6 and b = 3, find the value of a^2 + b^2",
-        "slug": "team3-6MmNnOoP"
+        "slug": "6MmNnOoP"
       },
       {
         "number": 7,
         "content": "Simplify: (3x^3 * 5x^2) / (15x^4)",
-        "slug": "team3-7QqRrSsT"
+        "slug": "7QqRrSsT"
       }
     ]
   },
   {
     "name": "Team4",
+    "background": "#FFC0CB",
+    "color": "#000000",
     "tasks": [
       {
         "number": 1,
         "content": "What is 9 - 2?",
-        "slug": "team4-1UuVvWwX"
+        "slug": "1UuVvWwX"
       },
       {
         "number": 2,
         "content": "Solve for x: 3x + 4 = 19",
-        "slug": "team4-2YyZz123"
+        "slug": "2YyZz123"
       },
       {
         "number": 3,
         "content": "Find the perimeter of a rectangle with length 7 and width 5",
-        "slug": "team4-3AaBbCcD"
+        "slug": "3AaBbCcD"
       },
       {
         "number": 4,
         "content": "Calculate the cube root of 125",
-        "slug": "team4-4EeFfGgH"
+        "slug": "4EeFfGgH"
       },
       {
         "number": 5,
         "content": "What is 18 divided by 6?",
-        "slug": "team4-5IiJjKkL"
+        "slug": "5IiJjKkL"
       },
       {
         "number": 6,
         "content": "If a = 8 and b = 1, find the value of a^2 - b^2",
-        "slug": "team4-6MmNnOoP"
+        "slug": "6MmNnOoP"
       },
       {
         "number": 7,
         "content": "Simplify: (6x^2 * 4x^3) / (12x^4)",
-        "slug": "team4-7QqRrSsT"
+        "slug": "7QqRrSsT"
       }
     ]
   },
   {
     "name": "Team5",
+    "background": "#D3D3D3",
+    "color": "#000000",
     "tasks": [
       {
         "number": 1,
         "content": "What is 12 + 9?",
-        "slug": "team5-1UuVvWwX"
+        "slug": "1UuVvWwX"
       },
       {
         "number": 2,
         "content": "Solve for x: 5x - 6 = 24",
-        "slug": "team5-2YyZz123"
+        "slug": "2YyZz123"
       },
       {
         "number": 3,
         "content": "Find the area of a circle with radius 4",
-        "slug": "team5-3AaBbCcD"
+        "slug": "3AaBbCcD"
       },
       {
         "number": 4,
         "content": "Calculate the square root of 49",
-        "slug": "team5-4EeFfGgH"
+        "slug": "4EeFfGgH"
       },
       {
         "number": 5,
         "content": "What is 21 multiplied by 8?",
-        "slug": "team5-5IiJjKkL"
+        "slug": "5IiJjKkL"
       },
       {
         "number": 6,
         "content": "If a = 7 and b = 5, find the value of a^2 + b^2",
-        "slug": "team5-6MmNnOoP"
+        "slug": "6MmNnOoP"
       },
       {
         "number": 7,
         "content": "Simplify: (5x^3 * 2x^2) / (10x^4)",
-        "slug": "team5-7QqRrSsT"
+        "slug": "7QqRrSsT"
       }
     ]
   },
   {
     "name": "Team6",
+    "background": "#F5F5DC",
+    "color": "#000000",
     "tasks": [
       {
         "number": 1,
         "content": "What is 7 + 3?",
-        "slug": "team6-1AbCdEfG"
+        "slug": "1AbCdEfG"
       },
       {
         "number": 2,
         "content": "Solve for x: 2x - 6 = 10",
-        "slug": "team6-2HjKlMnO"
+        "slug": "2HjKlMnO"
       },
       {
         "number": 3,
         "content": "Find the area of a circle with radius 6",
-        "slug": "team6-3PqRsTuV"
+        "slug": "3PqRsTuV"
       },
       {
         "number": 4,
         "content": "Calculate the square root of 49",
-        "slug": "team6-4WxYz123"
+        "slug": "4WxYz123"
       },
       {
         "number": 5,
         "content": "What is 9 multiplied by 8?",
-        "slug": "team6-5A1B2C3D"
+        "slug": "5A1B2C3D"
       },
       {
         "number": 6,
         "content": "If a = 4 and b = 5, find the value of a^2 + b^2",
-        "slug": "team6-6E4F5G6H"
+        "slug": "6E4F5G6H"
       },
       {
         "number": 7,
         "content": "Simplify: (3x^3 * 4x^2) / (12x^4)",
-        "slug": "team6-7I7J8K9L"
+        "slug": "7I7J8K9L"
       }
     ]
   },
   {
     "name": "Team7",
+    "background": "#800080",
+    "color": "#FFFFFF",
     "tasks": [
       {
         "number": 1,
         "content": "What is 10 - 4?",
-        "slug": "team7-1MnOpQrS"
+        "slug": "1MnOpQrS"
       },
       {
         "number": 2,
         "content": "Solve for x: 3x + 5 = 20",
-        "slug": "team7-2TtUvWxY"
+        "slug": "2TtUvWxY"
       },
       {
         "number": 3,
         "content": "Find the perimeter of a square with side length 7",
-        "slug": "team7-3ZaBbCcD"
+        "slug": "3ZaBbCcD"
       },
       {
         "number": 4,
         "content": "Calculate the cube root of 216",
-        "slug": "team7-4EeFfGgH"
+        "slug": "4EeFfGgH"
       },
       {
         "number": 5,
         "content": "What is 30 divided by 6?",
-        "slug": "team7-5IiJjKkL"
+        "slug": "5IiJjKkL"
       },
       {
         "number": 6,
         "content": "If a = 7 and b = 3, find the value of a^2 - b^2",
-        "slug": "team7-6MmNnOoP"
+        "slug": "6MmNnOoP"
       },
       {
         "number": 7,
         "content": "Simplify: (5x^2 * 3x^3) / (15x^4)",
-        "slug": "team7-7QqRrSsT"
+        "slug": "7QqRrSsT"
       }
     ]
   }

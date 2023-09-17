@@ -1,19 +1,27 @@
 <template>
-  <h1>text</h1>
+  <div class="wrapper">
+    <img :src="mechMatLogo" alt="logo" class="logo">
+    <h1>MECH MAT QUEST</h1>
+  </div>
 </template>
 
 <script setup>
-import { useRoute } from '#app'
-import teams from '~/api/data/teamsdata.json'
-
-const route = useRoute()
-
-onMounted(async () => {
-  console.log(teams)
-  console.log(route)
-})
+import mechMatLogo from '~/static/images/mechmatlogo.png'
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 
+  .logo {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    max-width: 250px;
+  }
+}
 </style>
