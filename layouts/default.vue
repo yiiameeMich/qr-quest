@@ -6,11 +6,13 @@
 </template>
 
 <script setup>
-import { useRoute } from "#app";
+import { ref, computed } from "vue";
+import { useRoute, useRouter } from "#app";
 import teams from "~/api/data/teamsdata.json";
 import Header from "~/components/Header.vue";
 
 const route = useRoute()
+const router = useRouter()
 const routeTeamParams = ref(route.params.team)
 
 const teamIndex = computed(() => {
