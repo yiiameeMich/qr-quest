@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import mechMatLogo from "~/static/images/mechmatlogo.png";
+import mechMatLogo from "public/images/mechmatlogo.png";
 
 const props = defineProps(['background'])
 </script>

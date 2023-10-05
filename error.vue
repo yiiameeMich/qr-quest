@@ -1,5 +1,6 @@
 <template>
-  <h1>{{ error.statusCode }}</h1>
+  <div>
+  </div>
 </template>
 
 <script setup>
@@ -7,5 +8,10 @@ defineProps(['error'])
 </script>
 
 <style scoped>
-
+div {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url('public/images/facepalm.jpeg');
+  background-position: center center;
+}
 </style>

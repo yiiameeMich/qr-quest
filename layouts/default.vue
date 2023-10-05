@@ -6,18 +6,20 @@
 </template>
 
 <script setup>
-import { useRoute } from "#app";
+import { ref, computed } from "vue";
+import { useRoute, useRouter } from "#app";
 import teams from "~/api/data/teamsdata.json";
 import Header from "~/components/Header.vue";
 
 const route = useRoute()
-const routeTeamParams = ref(route.params.team)
+const router = useRouter()
+const routeTeamParams = ref(router.currentRoute.value.params.team)
 
-const teamIndex = computed(() => {
-  return routeTeamParams.value.slice(-1)
+const team = computed(() => {
+  return teams.filter(team => team.name === routeTeamParams.value.toLowerCase())[0]
 })
 const backgroundColor = computed(() => {
-  return teams[teamIndex.value - 1].background
+  return team.value?.background
 })
 </script>
 

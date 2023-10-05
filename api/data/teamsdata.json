@@ -1,294 +1,622 @@
 [
   {
-    "name": "Team1",
+    "name": "mat1",
     "background": "#800080",
     "color":"#FFFFFF",
     "tasks": [
       {
         "number": 1,
-        "content": "What is the sum of 2 and 2?",
+        "content": "'Рекурсія? Можливо, ви мали на увазі рекурсія?'",
+        "correct_answer": "Креневич",
+        "options": {
+          "all": [
+            "Курченко", "Креневич", "Брайман", "Безущак", "Городній", "Циганівська"
+          ]
+        },
+        "tip": "каб. 211",
         "slug": "1aBcDeFg"
       },
       {
         "number": 2,
-        "content": "Solve for x: 3x - 5 = 10",
+        "content": "'Діти, гарно себе поводьте, а то я зроблю з вас метричний простір'",
+        "correct_answer": "Курченко",
+        "options": {
+          "all": [
+            "Курченко", "Креневич", "Брайман", "Безущак", "Городній", "Циганівська"
+          ]
+        },
+        "tip": "каб. 607",
         "slug": "2HjKlMnO"
       },
       {
         "number": 3,
-        "content": "Find the area of a rectangle with length 5 and width 8",
+        "content": "'На мої пари запізнюватись не бажано, бо в мене буває поганий настрій, можу не пустити. Ось, вчора Динамо програв, я не в гуморі.'",
+        "correct_answer": "Городній",
+        "options": {
+          "all": [
+            "Курченко", "Креневич", "Брайман", "Безущак", "Городній", "Циганівська"
+          ]
+        },
+        "tip": "каб. 2",
         "slug": "3PqRsTuV"
       },
       {
         "number": 4,
-        "content": "Calculate the square root of 25",
+        "content": "'Давайте постараємось порахувати це, не заснувши в процесі'",
+        "correct_answer": "Брайман",
+        "options": {
+          "all": [
+            "Курченко", "Креневич", "Брайман", "Безущак", "Городній", "Циганівська"
+          ]
+        },
+        "tip": "каб. 307",
         "slug": "4WxYz123"
       },
       {
         "number": 5,
-        "content": "What is the product of 7 and 9?",
+        "content": "'Доведення очевидно'",
+        "correct_answer": "Безущак",
+        "options": {
+          "all": [
+            "Курченко", "Креневич", "Брайман", "Безущак", "Городній", "Циганівська"
+          ]
+        },
+        "tip": "каб. 702",
         "slug": "5A1B2C3D"
       },
       {
         "number": 6,
-        "content": "If a = 3 and b = 4, find the value of a^2 + b^2",
+        "content": "'І Блінов, і Артем (про Артема блінова)'",
+        "correct_answer": "Циганівська",
+        "options": {
+          "all": [
+            "Курченко", "Креневич", "Брайман", "Безущак", "Городній", "Циганівська"
+          ]
+        },
+        "tip": "каб. 308",
         "slug": "6E4F5G6H"
       },
       {
         "number": 7,
-        "content": "Simplify: (2x^3 * 3x^2) / (6x^4)",
+        "content": "",
+        "correct_answer": "",
+        "options": {
+          "image": "/images/rebus.png"
+        },
+        "tip": "",
         "slug": "7I7J8K9L"
       }
     ]
   },
   {
-    "name": "Team2",
+    "name": "stat1",
     "background": "#0000FF",
     "color": "#FFFFFF",
     "tasks": [
       {
         "number": 1,
-        "content": "What is 5 - 3?",
+        "content": "'Перерва не закінчиться, поки я не доп’ю каву'",
+        "correct_answer": "Денисьєвський",
+        "options": {
+          "all": [
+            "Денисьєвський", "Креневич", "Безущак", "Гапʼяк", "Щеглов"
+          ]
+        },
+        "tip": "каб. 610",
         "slug": "1MnOpQrS"
       },
       {
         "number": 2,
-        "content": "Solve for x: 2x + 7 = 15",
+        "content": "'Все, що можна забути, програміст забуває'",
+        "correct_answer": "Креневич",
+        "options": {
+          "all": [
+            "Денисьєвський", "Креневич", "Безущак", "Гапʼяк", "Щеглов"
+          ]
+        },
+        "tip": "каб. 243",
         "slug": "2TtUvWxY"
       },
       {
         "number": 3,
-        "content": "Find the perimeter of a square with side length 6",
+        "content": "Кидають дві монети. Яка з подій більш ймовірна:  А - монети випадають однаковими сторонами;  В - монети випадають різними сторонами?",
+        "correct_answer": "P(A)=P(B)",
+        "options": {
+          "all": [
+            "P(A)", "P(B)", "P(A)=P(B)"
+          ]
+        },
+        "tip": "каб. 42",
         "slug": "3ZaBbCcD"
       },
       {
         "number": 4,
-        "content": "Calculate the cube root of 64",
+        "content": "ʼЯкщо у вас були якісь плани, то відміняйте всі свої плани. Я поза конкуренцієюʼ",
+        "correct_answer": "Безущак",
+        "options": {
+          "all": [
+            "Денисьєвський", "Креневич", "Безущак", "Гапʼяк", "Щеглов"
+          ]
+        },
+        "tip": "answer is 'for' with one more letter",
         "slug": "4EeFfGgH"
       },
       {
         "number": 5,
-        "content": "What is 12 divided by 4?",
+        "content": "/images/lim4840.png",
+        "correct_answer": "605",
+        "options": {
+          "all": [
+            "605", "4840", "870", "2420"
+          ]
+        },
+        "tip": "каб. 605",
         "slug": "5IiJjKkL"
       },
       {
         "number": 6,
-        "content": "If a = 5 and b = 2, find the value of a^2 - b^2",
+        "content": "a = 2023 \nprint(fʼ{(a - 100) % 10}ʼ + fʼ{(a - 100) // 1000}ʼ)",
+        "correct_answer": "31",
+        "options": {
+          "all": [
+            "21", "23", "31", "202"
+          ]
+        },
+        "tip": "каб. 31",
         "slug": "6MmNnOoP"
       },
       {
         "number": 7,
-        "content": "Simplify: (4x^2 * 2x^3) / (8x^4)",
+        "content": "/images/crossword.png",
+        "correct_answer": "",
+        "options": {
+          "all": []
+        },
+        "tip": "",
         "slug": "7QqRrSsT"
       }
     ]
   },
   {
-    "name": "Team3",
+    "name": "compmat2",
     "background": "#008000",
     "color": "#FFFFFF",
     "tasks": [
       {
         "number": 1,
-        "content": "What is 8 + 6?",
+        "content": "'Менше рівне двох? Не вірю. Ладно, хай буде'",
+        "correct_answer": "Борисейко",
+        "options": {
+          "all": [
+            "Борисейко", "Городній", "Креневич", "Олійник", "Іваненко"
+          ]
+        },
+        "tip": "каб. 604",
         "slug": "1UuVvWwX"
       },
       {
         "number": 2,
-        "content": "Solve for x: 4x - 9 = 27",
+        "content": "'Якщо сказати на початку, що задача легко вирішується, то вирішення знаходиться значно швидше'",
+        "correct_answer": "Городній",
+        "options": {
+          "all": [
+            "Борисейко", "Городній", "Креневич", "Олійник", "Іваненко"
+          ]
+        },
+        "tip": "каб. 309",
         "slug": "2YyZz123"
       },
       {
         "number": 3,
-        "content": "Find the area of a triangle with base 10 and height 8",
+        "content": "'Я прочитав дві книжки - буквар і вторую'",
+        "correct_answer": "Креневич",
+        "options": {
+          "all": [
+            "Борисейко", "Городній", "Креневич", "Олійник", "Іваненко"
+          ]
+        },
+        "tip": "каб. 211",
         "slug": "3AaBbCcD"
       },
       {
         "number": 4,
-        "content": "Calculate the square root of 144",
+        "content": "'Я, чесно кажучи, не розумію, як можна вивчати музику. Хоча той, хто вивчає музику, мабуть, не розуміє, як можна вивчати математику'",
+        "correct_answer": "Олійник",
+        "options": {
+          "all": [
+            "Борисейко", "Городній", "Креневич", "Олійник", "Іваненко"
+          ]
+        },
+        "tip": "каб. 603",
         "slug": "4EeFfGgH"
       },
       {
         "number": 5,
-        "content": "What is 15 multiplied by 7?",
+        "content": "a = 2023 \n a = (a // 10) % 10 \n print(a)",
+        "correct_answer": "2",
+        "options": {
+          "all": [
+            "2", "23", "20", "202"
+          ]
+        },
+        "tip": "каб. 2",
         "slug": "5IiJjKkL"
       },
       {
         "number": 6,
-        "content": "If a = 6 and b = 3, find the value of a^2 + b^2",
+        "content": "ʼЯк цього крокодила перетворити в милу поняшку?ʼ",
+        "correct_answer": "Іваненко",
+        "options": {
+          "all": [
+            "Борисейко", "Городній", "Креневич", "Олійник", "Іваненко"
+          ]
+        },
+        "tip": "каб. 602",
         "slug": "6MmNnOoP"
       },
       {
         "number": 7,
-        "content": "Simplify: (3x^3 * 5x^2) / (15x^4)",
+        "content": "/images/rebus.png",
+        "correct_answer": "",
+        "options": {
+          "all": []
+        },
+        "tip": "",
         "slug": "7QqRrSsT"
       }
     ]
   },
   {
-    "name": "Team4",
+    "name": "mat2",
     "background": "#FFC0CB",
     "color": "#000000",
     "tasks": [
       {
         "number": 1,
-        "content": "What is 9 - 2?",
+        "content": "a = 2023 \n a = (a // 10) % 10 \n print(a)",
+        "correct_answer": "2",
+        "options": {
+          "all": [
+            "20", "23", "202", "2"
+          ]
+        },
+        "tip": "каб. 2",
         "slug": "1UuVvWwX"
       },
       {
         "number": 2,
-        "content": "Solve for x: 3x + 4 = 19",
+        "content": "ʼМи вас вчимо виживатиʼ",
+        "correct_answer": "Безущак",
+        "options": {
+          "all": [
+            "Безущак", "Городній", "Креневич", "Курченко", "Клімчук"
+          ]
+        },
+        "tip": "каб. 308",
         "slug": "2YyZz123"
       },
       {
         "number": 3,
-        "content": "Find the perimeter of a rectangle with length 7 and width 5",
+        "content": "ʼПідказка: це дуже простоʼ",
+        "correct_answer": "Городній",
+        "options": {
+          "all": [
+            "Безущак", "Городній", "Креневич", "Курченко", "Клімчук"
+          ]
+        },
+        "tip": "каб. 704",
         "slug": "3AaBbCcD"
       },
       {
         "number": 4,
         "content": "Calculate the cube root of 125",
+        "correct_answer": "Креневич",
+        "options": {
+          "all": [
+            "Безущак", "Городній", "Креневич", "Курченко", "Клімчук"
+          ]
+        },
+        "tip": "каб. 34",
         "slug": "4EeFfGgH"
       },
       {
         "number": 5,
-        "content": "What is 18 divided by 6?",
+        "content": "/images/lim1540.png",
+        "correct_answer": "308",
+        "options": {
+          "all": [
+            "1540", "308", "324", "770"
+          ]
+        },
+        "tip": "каб. 308",
         "slug": "5IiJjKkL"
       },
       {
         "number": 6,
-        "content": "If a = 8 and b = 1, find the value of a^2 - b^2",
+        "content": "ʼОсь такий от симпатичний рядʼ",
+        "correct_answer": "Курченко",
+        "options": {
+          "all": [
+            "Безущак", "Городній", "Креневич", "Курченко", "Клімчук"
+          ]
+        },
+        "tip": "каб. 703",
         "slug": "6MmNnOoP"
       },
       {
         "number": 7,
-        "content": "Simplify: (6x^2 * 4x^3) / (12x^4)",
+        "content": "/images/crossword.png",
+        "correct_answer": "",
+        "options": {
+          "all": []
+        },
+        "tip": "",
         "slug": "7QqRrSsT"
       }
     ]
   },
   {
-    "name": "Team5",
+    "name": "stat2",
     "background": "#D3D3D3",
     "color": "#000000",
     "tasks": [
       {
         "number": 1,
-        "content": "What is 12 + 9?",
+        "content": "ʼМехмат - це крутоʼ",
+        "correct_answer": "Безущак",
+        "options": {
+          "all": [
+            "Безущак", "Десятерик", "Денисьєвський", "Креневич", "Ніколаєнко"
+          ]
+        },
+        "tip": "каб. 45",
         "slug": "1UuVvWwX"
       },
       {
         "number": 2,
-        "content": "Solve for x: 5x - 6 = 24",
+        "content": "ʼНе будемо ображати хлопців через те, що дівчата завжди на крок попередуʼ",
+        "correct_answer": "Десятерик",
+        "options": {
+          "all": [
+            "Безущак", "Десятерик", "Денисьєвський", "Креневич", "Ніколаєнко"
+          ]
+        },
+        "tip": "каб. 307",
         "slug": "2YyZz123"
       },
       {
         "number": 3,
-        "content": "Find the area of a circle with radius 4",
+        "content": "ʼДжяст е моментʼ",
+        "correct_answer": "Денисьєвський",
+        "options": {
+          "all": [
+            "Безущак", "Десятерик", "Денисьєвський", "Креневич", "Ніколаєнко"          ]
+        },
+        "tip": "каб. 610",
         "slug": "3AaBbCcD"
       },
       {
         "number": 4,
-        "content": "Calculate the square root of 49",
+        "content": "a = 2023 \n a = (a // 10) % 10 \n print(a)",
+        "correct_answer": "2",
+        "options": {
+          "all": [
+            "20", "23", "202", "2"
+          ]
+        },
+        "tip": "каб. 2",
         "slug": "4EeFfGgH"
       },
       {
         "number": 5,
-        "content": "What is 21 multiplied by 8?",
+        "content": "ʼОдного *прізвище* на всіх не вистачає, буде вам дваʼ",
+        "correct_answer": "Креневич",
+        "options": {
+          "all": [
+            "Безущак", "Десятерик", "Денисьєвський", "Креневич", "Ніколаєнко"
+          ]
+        },
+        "tip": "каб. 34",
         "slug": "5IiJjKkL"
       },
       {
         "number": 6,
-        "content": "If a = 7 and b = 5, find the value of a^2 + b^2",
+        "content": "/images/lim4840.png",
+        "correct_answer": "605",
+        "options": {
+          "all": [
+            "4840", "605", "2420", "870"
+          ]
+        },
+        "tip": "каб. 605",
         "slug": "6MmNnOoP"
       },
       {
         "number": 7,
-        "content": "Simplify: (5x^3 * 2x^2) / (10x^4)",
+        "content": "/images/rebus.png",
+        "correct_answer": "",
+        "options": {
+          "all": []
+        },
+        "tip": "",
         "slug": "7QqRrSsT"
       }
     ]
   },
   {
-    "name": "Team6",
+    "name": "compmat1",
     "background": "#F5F5DC",
     "color": "#000000",
     "tasks": [
       {
         "number": 1,
-        "content": "What is 7 + 3?",
+        "content": "ʼЩоби з одного черв’ячка зробити m-черв’ячків, треба розрізати черв’ячка m-1 разів… Готікаʼ",
+        "correct_answer": "Іваненко",
+        "options": {
+          "all": [
+            "Іваненко", "Городній", "Олійник", "Борисейко", "Креневич"
+          ]
+        },
+        "tip": "каб. 603",
         "slug": "1AbCdEfG"
       },
       {
         "number": 2,
-        "content": "Solve for x: 2x - 6 = 10",
+        "content": "a = 2023 \n a = (a // 10) % 10 \n print(a)",
+        "correct_answer": "2",
+        "options": {
+          "all": [
+            "23", "20", "202", "2"
+          ]
+        },
+        "tip": "каб. 2",
         "slug": "2HjKlMnO"
       },
       {
         "number": 3,
-        "content": "Find the area of a circle with radius 6",
+        "content": "Це повна труба",
+        "correct_answer": "Городній",
+        "options": {
+          "all": [
+            "Іваненко", "Городній", "Олійник", "Борисейко", "Креневич"
+          ]
+        },
+        "tip": "каб. 602",
         "slug": "3PqRsTuV"
       },
       {
         "number": 4,
-        "content": "Calculate the square root of 49",
+        "content": "ʼЛема про рукостискання, очевидно, була придумана в доковідні часиʼ",
+        "correct_answer": "Олійник",
+        "options": {
+          "all": [
+            "Іваненко", "Городній", "Олійник", "Борисейко", "Креневич"
+          ]
+        },
+        "tip": "каб. 309",
         "slug": "4WxYz123"
       },
       {
         "number": 5,
-        "content": "What is 9 multiplied by 8?",
+        "content": "ʼСтудент стараний, але іноді чудитьʼ",
+        "correct_answer": "Борисейко",
+        "options": {
+          "all": [
+            "Іваненко", "Городній", "Олійник", "Борисейко", "Креневич"
+          ]
+        },
+        "tip": "каб. 602",
         "slug": "5A1B2C3D"
       },
       {
         "number": 6,
-        "content": "If a = 4 and b = 5, find the value of a^2 + b^2",
+        "content": "ʼЯ вас залізною рукою в рай загоняюʼ",
+        "correct_answer": "Креневич",
+        "options": {
+          "all": [
+            "Іваненко", "Городній", "Олійник", "Борисейко", "Креневич"
+          ]
+        },
+        "tip": "каб. 34",
         "slug": "6E4F5G6H"
       },
       {
         "number": 7,
-        "content": "Simplify: (3x^3 * 4x^2) / (12x^4)",
+        "content": "/images/crossword.png",
+        "correct_answer": "",
+        "options": {
+          "all": []
+        },
+        "tip": "",
         "slug": "7I7J8K9L"
       }
     ]
   },
   {
-    "name": "Team7",
+    "name": "osvita",
     "background": "#800080",
     "color": "#FFFFFF",
     "tasks": [
       {
         "number": 1,
-        "content": "What is 10 - 4?",
+        "content": "-Добрий день, Ірина Миколаївна, підкажіть, будь ласка, коли дедлайн на курсову? - Добрий день, сьогодні, але почекає до п’ятниці",
+        "correct_answer": "Циганівська",
+        "options": {
+          "all": [
+            "Циганівська", "Петрова", "Пустовіт", "Клімчук", "Бурʼян"
+          ]
+        },
+        "tip": "каб. 308",
         "slug": "1MnOpQrS"
       },
       {
         "number": 2,
-        "content": "Solve for x: 3x + 5 = 20",
+        "content": "/images/lim4840.png",
+        "correct_answer": "605",
+        "options": {
+          "all": [
+            "605", "4840", "2420", "870"
+          ]
+        },
+        "tip": "каб. 605",
         "slug": "2TtUvWxY"
       },
       {
         "number": 3,
-        "content": "Find the perimeter of a square with side length 7",
+        "content": "Летіла група качок. Одна попереду, дві позаду; одна позаду і дві попереду; одна між двома і три в ряд. Скільки летіло качок?",
+        "correct_answer": "3",
+        "options": {
+          "all": [
+            "5", "6", "3", "4"
+          ]
+        },
+        "tip": "каб. 31",
         "slug": "3ZaBbCcD"
       },
       {
         "number": 4,
-        "content": "Calculate the cube root of 216",
+        "content": "ʼЯкщо в чашці кава всередині, то ми туди пальці не суємо, ми беремо за зовнішню поверхнюʼ",
+        "correct_answer": "Петрова",
+        "options": {
+          "all": [
+            "Циганівська", "Петрова", "Пустовіт", "Клімчук", "Бурʼян"
+          ]
+        },
+        "tip": "каб. 243",
         "slug": "4EeFfGgH"
       },
       {
         "number": 5,
-        "content": "What is 30 divided by 6?",
+        "content": "Кидають дві монети. Яка з подій більш ймовірна:  А - монети випадають однаковими сторонами;  В - монети випадають різними сторонами?",
+        "correct_answer": "P(A)=P(B)",
+        "options": {
+          "all": [
+            "P(A)", "P(B)", "P(A)=P(B)"
+          ]
+        },
+        "tip": "каб. 309",
         "slug": "5IiJjKkL"
       },
       {
         "number": 6,
-        "content": "If a = 7 and b = 3, find the value of a^2 - b^2",
+        "content": "a = 2023 \na = (a // 10) % 10 \nprint(a)",
+        "correct_answer": "2",
+        "options": {
+          "all": [
+            "20", "23", "2", "202"
+          ]
+        },
+        "tip": "каб. 2",
         "slug": "6MmNnOoP"
       },
       {
         "number": 7,
-        "content": "Simplify: (5x^2 * 3x^3) / (15x^4)",
+        "content": "/images/rebus.png",
+        "correct_answer": "",
+        "options": {
+          "all": []
+        },
+        "tip": "",
         "slug": "7QqRrSsT"
       }
     ]
