@@ -1,13 +1,11 @@
 <template>
   <header class="wrapper" :style="{ background }">
-    <img :src="mechMatLogo" alt="logo" class="logo">
+    <img src="/images/mechmatlogo.png" alt="logo" class="logo">
     <h1>MECH-MAT QUEST</h1>
   </header>
 </template>
 
 <script setup>
-import mechMatLogo from "public/images/mechmatlogo.png";
-
 const props = defineProps(['background'])
 </script>
 

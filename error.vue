@@ -11,7 +11,7 @@ defineProps(['error'])
 div {
   min-width: 100vw;
   min-height: 100vh;
-  background-image: url('public/images/facepalm.jpeg');
+  background-image: url('/images/facepalm.jpeg');
   background-position: center center;
 }
 </style>

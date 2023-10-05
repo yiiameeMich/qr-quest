@@ -16,7 +16,7 @@ const router = useRouter()
 const routeTeamParams = ref(router.currentRoute.value.params.team)
 
 const team = computed(() => {
-  return teams.filter(team => team.name === routeTeamParams.value.toLowerCase())[0]
+  return teams.filter(team => team.name === routeTeamParams.value?.toLowerCase())[0]
 })
 const backgroundColor = computed(() => {
   return team.value?.background
