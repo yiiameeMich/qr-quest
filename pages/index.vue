@@ -1,13 +1,9 @@
 <template>
   <div class="wrapper">
-    <img :src="mechMatLogo" alt="logo" class="logo">
+    <img src="/images/mechmatlogo.png" alt="logo" class="logo">
     <h1>MECH MAT QUEST</h1>
   </div>
 </template>
-
-<script setup>
-import mechMatLogo from 'public/images/mechmatlogo.png'
-</script>
 
 <style scoped lang="scss">
 .wrapper {
