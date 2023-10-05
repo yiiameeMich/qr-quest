@@ -77,9 +77,9 @@ const contentImage = computed(() => {
 <template>
   <div class="wrapper">
     <!-- question -->
-    <p v-if="!contentImage" :style="{ color }">
+    <h1 v-if="!contentImage" :style="{ color }">
       {{ task.content }}
-    </p>
+    </h1>
     <img v-if="contentImage" :src="task.content" alt="">
     <!-- answers -->
     <div v-if="task.options.all.length > 0 && shuffledTasks && shuffledTasks.length > 0" class="btns">
@@ -112,7 +112,7 @@ const contentImage = computed(() => {
   align-items: center;
   justify-content: center;
 
-  p {
+  h1 {
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -122,7 +122,7 @@ const contentImage = computed(() => {
     font-weight: 500;
     letter-spacing: 0.5px;
     text-align: center;
-    white-space: pre;
+    white-space: break-spaces;
   }
 
   .btns {
@@ -135,7 +135,6 @@ const contentImage = computed(() => {
     width: 75%;
     margin: 20px 0;
     button {
-      width: 30%;
       height: 40px;
       padding: 10px 12px;
       background-color: v-bind(color);

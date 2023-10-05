@@ -1,5 +1,5 @@
 <template>
-  <Header :background="backgroundColor" />
+  <Header :background="backgroundColor" :color="color" />
   <div class="container" :style="{ backgroundColor }">
     <slot />
   </div>
@@ -20,6 +20,9 @@ const team = computed(() => {
 })
 const backgroundColor = computed(() => {
   return team.value?.background
+})
+const color = computed(() => {
+  return team.value?.color
 })
 </script>
 
