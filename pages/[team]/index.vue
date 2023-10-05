@@ -1,6 +1,4 @@
 <script setup>
-import { definePageMeta } from "nuxt/dist/pages/runtime/index.js";
-
 definePageMeta({
   middleware: [
     function () {
