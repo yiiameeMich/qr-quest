@@ -80,7 +80,7 @@ const contentImage = computed(() => {
     <h1 v-if="!contentImage" :style="{ color }">
       {{ task.content }}
     </h1>
-    <img v-if="contentImage" :src="task.content" alt="">
+    <img v-if="contentImage" style="width: 95%; object-fit: cover" :src="task.content" alt="">
     <!-- answers -->
     <div v-if="task.options.all.length > 0 && shuffledTasks && shuffledTasks.length > 0" class="btns">
       <button v-for="(option, idx) in shuffledTasks" :key="idx" @click="selectAnswer(option)">
@@ -88,7 +88,7 @@ const contentImage = computed(() => {
       </button>
     </div>
     <div v-if="imagePath">
-      <img :src="imagePath" alt="">
+      <img :src="imagePath" style="width: 95%; object-fit: cover" alt="">
     </div>
     <div v-if="needHelp" :style="{ color }">
       Невірно :(

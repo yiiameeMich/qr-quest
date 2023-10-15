@@ -1,7 +1,7 @@
 [
   {
     "name": "mat1",
-    "background": "#800080",
+    "background": "#F4C2B9",
     "color":"#FFFFFF",
     "tasks": [
       {
@@ -90,7 +90,7 @@
   },
   {
     "name": "stat1",
-    "background": "#0000FF",
+    "background": "#F1C627",
     "color": "#FFFFFF",
     "tasks": [
       {
@@ -179,7 +179,7 @@
   },
   {
     "name": "compmat2",
-    "background": "#008000",
+    "background": "#C8D02B",
     "color": "#FFFFFF",
     "tasks": [
       {
@@ -268,7 +268,7 @@
   },
   {
     "name": "mat2",
-    "background": "#FFC0CB",
+    "background": "#F3A32D",
     "color": "#000000",
     "tasks": [
       {
@@ -357,7 +357,7 @@
   },
   {
     "name": "stat2",
-    "background": "#D3D3D3",
+    "background": "#D12A24",
     "color": "#000000",
     "tasks": [
       {
@@ -445,7 +445,7 @@
   },
   {
     "name": "compmat1",
-    "background": "#F5F5DC",
+    "background": "#83A6A9",
     "color": "#000000",
     "tasks": [
       {
@@ -534,12 +534,12 @@
   },
   {
     "name": "osvita",
-    "background": "#800080",
+    "background": "#1A6AB3",
     "color": "#FFFFFF",
     "tasks": [
       {
         "number": 1,
-        "content": "-Добрий день, Ірина Миколаївна, підкажіть, будь ласка, коли дедлайн на курсову? - Добрий день, сьогодні, але почекає до п’ятниці",
+        "content": "-Добрий день, *викладач*, підкажіть, будь ласка, коли дедлайн на курсову? - Добрий день, сьогодні, але я почекаю до п’ятниці",
         "correct_answer": "Циганівська",
         "options": {
           "all": [
