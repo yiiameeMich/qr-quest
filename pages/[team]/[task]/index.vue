@@ -31,15 +31,47 @@ const color = computed(() => {
 const correct = ref(null);
 const needHelp = ref(false);
 const answerShown = ref(false);
+const timerRunning = ref(false);
+const timerDuration = ref(300);
+const timerInterval = ref(null);
+const minutes = ref(5);
+const seconds = ref(0);
+
+const startTimer = () => {
+  timerRunning.value = true;
+  timerInterval.value = setInterval(() => {
+    if (timerDuration.value > 0) {
+      minutes.value = Math.floor(timerDuration.value / 60);
+      seconds.value = timerDuration.value % 60;
+      timerDuration.value--;
+    } else {
+      stopTimer();
+    }
+  }, 1000);
+}
+
+const stopTimer = () => {
+  clearInterval(timerInterval.value);
+  timerRunning.value = false;
+  minutes.value = 0;
+  seconds.value = 0;
+}
 
 const selectAnswer = (option) => {
   needHelp.value = false;
   answerShown.value = false;
 
-  if (option !== task.value.correct_answer) {
-    needHelp.value = true
+  if (option !== task.value.correct_answer && !timerRunning.value) {
+    needHelp.value = true;
+    startTimer();
+  } else if (option !== task.value.correct_answer && timerRunning.value) {
+    needHelp.value = true;
   } else {
-    answerShown.value = true
+    if (!timerRunning.value) {
+      answerShown.value = true
+    } else {
+      needHelp.value = true;
+    }
   }
 }
 
@@ -67,6 +99,12 @@ onMounted(() => {
   } else if (task.value?.options?.image) {
     imagePath.value = task.value.options.image
   }
+
+  nextTick(() => {
+    window.onbeforeunload = function() {
+      return false;
+    }
+  })
 })
 
 const contentImage = computed(() => {
@@ -93,7 +131,7 @@ const contentImage = computed(() => {
     <div v-if="needHelp" :style="{ color }">
       Невірно :(
       <br>
-      Спробуйте ще
+      Спробуйте ще через {{ minutes }}:{{ seconds < 10 ? `0${seconds}` : seconds }}
     </div>
     <div v-if="answerShown" :style="{ color }">
       Вірно!
