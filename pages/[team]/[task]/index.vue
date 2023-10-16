@@ -120,7 +120,7 @@ const contentImage = computed(() => {
     </h1>
     <img v-if="contentImage" style="width: 95%; object-fit: cover" :src="task.content" alt="">
     <!-- answers -->
-    <div v-if="task.options.all.length > 0 && shuffledTasks && shuffledTasks.length > 0" class="btns">
+    <div v-if="task.options.all && task.options.all.length > 0 && shuffledTasks && shuffledTasks.length > 0" class="btns">
       <button v-for="(option, idx) in shuffledTasks" :key="idx" @click="selectAnswer(option)">
         {{ option }}
       </button>
