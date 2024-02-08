@@ -34,7 +34,7 @@ const answerShown = ref(false);
 const timerRunning = ref(false);
 const timerDuration = ref(60);
 const timerInterval = ref(null);
-const minutes = ref(5);
+const minutes = ref(1);
 const seconds = ref(0);
 
 const startTimer = () => {
