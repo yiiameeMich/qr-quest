@@ -39,6 +39,8 @@ const seconds = ref(0);
 
 const startTimer = () => {
   timerRunning.value = true;
+  minutes.value = 1;
+  seconds.value = 0;
   timerInterval.value = setInterval(() => {
     if (timerDuration.value > 0) {
       minutes.value = Math.floor(timerDuration.value / 60);
@@ -53,7 +55,10 @@ const startTimer = () => {
 const stopTimer = () => {
   clearInterval(timerInterval.value);
   timerRunning.value = false;
-  minutes.value = 0;
+  timerDuration.value = 60;
+  timerInterval.value = null;
+  needHelp.value = false;
+  minutes.value = 1;
   seconds.value = 0;
 }
 
