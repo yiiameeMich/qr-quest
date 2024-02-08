@@ -90,8 +90,8 @@
   },
   {
     "name": "stat1",
-    "background": "#F1C627",
-    "color": "#FFFFFF",
+    "background": "#FAFF4C",
+    "color": "#000000",
     "tasks": [
       {
         "number": 1,
@@ -179,8 +179,8 @@
   },
   {
     "name": "compmat2",
-    "background": "#C8D02B",
-    "color": "#FFFFFF",
+    "background": "C8D02B",
+    "color": "#000000",
     "tasks": [
       {
         "number": 1,
@@ -309,7 +309,7 @@
       },
       {
         "number": 4,
-        "content": "Calculate the cube root of 125",
+        "content": "Людина народжена щоб страждати",
         "correct_answer": "Креневич",
         "options": {
           "all": [
@@ -445,7 +445,7 @@
   },
   {
     "name": "compmat1",
-    "background": "#83A6A9",
+    "background": "#ADE0E5",
     "color": "#000000",
     "tasks": [
       {
@@ -534,7 +534,7 @@
   },
   {
     "name": "osvita",
-    "background": "#1A6AB3",
+    "background": "#5E96D8",
     "color": "#FFFFFF",
     "tasks": [
       {
