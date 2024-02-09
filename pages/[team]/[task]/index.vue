@@ -1,9 +1,12 @@
 <script setup>
 import { ref, computed } from "vue"
 import { useRouter } from '#app'
+import useStore from "~/store/index"
 import teams from '~/api/data/teamsdata.json'
 
 const router = useRouter()
+
+const state = useStore();
 
 const routeTeamParams = ref(router.currentRoute.value.params.team)
 const routeTaskParams = ref(router.currentRoute.value.params.task)
@@ -28,24 +31,20 @@ const color = computed(() => {
   return team.value?.color
 })
 
-const correct = ref(null);
 const needHelp = ref(false);
 const answerShown = ref(false);
-const timerRunning = ref(false);
-const timerDuration = ref(60);
 const timerInterval = ref(null);
-const minutes = ref(1);
-const seconds = ref(0);
 
 const startTimer = () => {
-  timerRunning.value = true;
-  minutes.value = 1;
-  seconds.value = 0;
+  state.timerRunning = true;
+  state.minutes = 1;
+  state.timerDuration = 60;
+  state.seconds = 0;
   timerInterval.value = setInterval(() => {
-    if (timerDuration.value > 0) {
-      minutes.value = Math.floor(timerDuration.value / 60);
-      seconds.value = timerDuration.value % 60;
-      timerDuration.value--;
+    if (state.timerDuration > 0) {
+      state.minutes = Math.floor(state.timerDuration / 60);
+      state.seconds = state.timerDuration % 60;
+      state.timerDuration--;
     } else {
       stopTimer();
     }
@@ -54,25 +53,25 @@ const startTimer = () => {
 
 const stopTimer = () => {
   clearInterval(timerInterval.value);
-  timerRunning.value = false;
-  timerDuration.value = 60;
+  state.timerRunning = false;
+  state.timerDuration = 60;
   timerInterval.value = null;
   needHelp.value = false;
-  minutes.value = 1;
-  seconds.value = 0;
+  state.minutes = 1;
+  state.seconds = 0;
 }
 
 const selectAnswer = (option) => {
   needHelp.value = false;
   answerShown.value = false;
 
-  if (option !== task.value.correct_answer && !timerRunning.value) {
+  if (option !== task.value.correct_answer && !state.timerRunning) {
     needHelp.value = true;
     startTimer();
-  } else if (option !== task.value.correct_answer && timerRunning.value) {
+  } else if (option !== task.value.correct_answer && state.timerRunning) {
     needHelp.value = true;
   } else {
-    if (!timerRunning.value) {
+    if (!state.timerRunning) {
       answerShown.value = true
     } else {
       needHelp.value = true;
@@ -105,6 +104,13 @@ onMounted(() => {
     imagePath.value = task.value.options.image
   }
 
+  if (state.timerRunning) {
+    clearInterval(timerInterval.value);
+    timerInterval.value = null;
+    needHelp.value = true;
+    startTimer();
+  }
+
   nextTick(() => {
     window.onbeforeunload = function() {
       return false;
@@ -134,12 +140,12 @@ const contentImage = computed(() => {
       <img :src="imagePath" style="width: 95%; object-fit: cover" alt="">
     </div>
     <div v-if="needHelp" :style="{ color }">
-      Невірно :(
+      Неправильно :(
       <br>
-      Спробуйте ще через {{ minutes }}:{{ seconds < 10 ? `0${seconds}` : seconds }}
+      Спробуйте ще через {{ state.minutes }}:{{ state.seconds < 10 ? `0${state.seconds}` : state.seconds }}
     </div>
     <div v-if="answerShown" :style="{ color }">
-      Вірно!
+      Правильно!
       <br>
       Наступна локація: {{ task.tip }}
     </div>
